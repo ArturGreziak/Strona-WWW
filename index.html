@@ -8,6 +8,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
+    <link href="dist/css/lightbox.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -87,18 +88,66 @@
         </p>
         <div class="buttony"></div>
         <div class="galeria">
-          <div class="galer"><img src="./image/1.jpg" alt="" /></div>
-          <div class="galer"><img src="./image/2.jpg" alt="" /></div>
-          <div class="galer"><img src="./image/3.jpg" alt="" /></div>
-          <div class="galer"><img src="./image/4.jpg" alt="" /></div>
-          <div class="galer"><img src="./image/5.jpg" alt="" /></div>
-          <div class="galer"><img src="./image/6.jpg" alt="" /></div>
-          <div class="galer"><img src="./image/7.jpg" alt="" /></div>
-          <div class="galer"><img src="./image/8.jpg" alt="" /></div>
-          <div class="galer"><img src="./image/9.jpg" alt="" /></div>
-          <div class="galer"><img src="./image/10.jpg" alt="" /></div>
-          <div class="galer"><img src="./image/11.jpg" alt="" /></div>
-          <div class="galer"><img src="./image/12.jpg" alt="" /></div>
+          <div class="galer">
+            <a data-lightbox="obrazek 1" href="./image/1S.jpg">
+              <img src="./image/1.jpg" alt="miniatira" />
+            </a>
+          </div>
+          <div class="galer">
+            <a data-lightbox="obrazek 2" href="./image/2S.jpg">
+              <img src="./image/2.jpg" alt="" />
+            </a>
+          </div>
+          <div class="galer">
+            <a data-lightbox="obrazek 3" href="./image/3S.jpg">
+              <img src="./image/3.jpg" alt="" />
+            </a>
+          </div>
+          <div class="galer">
+            <a data-lightbox="obrazek 4" href="./image/4S.jpg">
+              <img src="./image/4.jpg" alt="" />
+            </a>
+          </div>
+          <div class="galer">
+            <a data-lightbox="obrazek 5" href="./image/5S.jpg">
+              <img src="./image/5.jpg" alt="" />
+            </a>
+          </div>
+          <div class="galer">
+            <a data-lightbox="obrazek 6" href="./image/6S.jpg">
+              <img src="./image/6.jpg" alt="" />
+            </a>
+          </div>
+          <div class="galer">
+            <a data-lightbox="obrazek 7" href="./image/7S.jpg">
+              <img src="./image/7.jpg" alt="" />
+            </a>
+          </div>
+          <div class="galer">
+            <a data-lightbox="obrazek 8" href="./image/8S.jpg">
+              <img src="./image/8.jpg" alt="" />
+            </a>
+          </div>
+          <div class="galer">
+            <a data-lightbox="obrazek 9" href="./image/9S.jpg">
+              <img src="./image/9.jpg" alt="" />
+            </a>
+          </div>
+          <div class="galer">
+            <a data-lightbox="obrazek 10" href="./image/10S.jpg">
+              <img src="./image/10.jpg" alt="" />
+            </a>
+          </div>
+          <div class="galer">
+            <a data-lightbox="obrazek 11" href="./image/11S.jpg">
+              <img src="./image/11.jpg" alt="" />
+            </a>
+          </div>
+          <div class="galer">
+            <a data-lightbox="obrazek " href="./image/12S.jpg">
+              <img src="./image/12.jpg" alt="" />
+            </a>
+          </div>
         </div>
       </main>
       <section class="footer">
@@ -111,5 +160,16 @@
         <p class="copy">@ 2020.07.15 Artur Gręziak WebSite.</p>
       </section>
     </div>
+    <script src="dist/js/lightbox-plus-jquery.js"></script>
+    <script src="dist/js/lightbox.js"></script>
+    <script>
+        lightbox.option({
+          // albumLabel: 'Zdjęcie %1 z %2',
+          lightbox.option({
+        'resizeDuration': 6000,
+        'wrapAround': true
+      })
+        })
+    </script>
   </body>
 </html>
